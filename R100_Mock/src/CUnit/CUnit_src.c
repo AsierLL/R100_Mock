@@ -504,7 +504,7 @@ static CU_TestInfo tests_threat_comm[] = {
 
 /******************************/
 void test01(){
-	CU_ASSERT_EQUAL(3, 3);
+	CU_ASSERT_EQUAL(4, 4);
 }
 
 static CU_TestInfo githubActions[] = {
