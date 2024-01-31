@@ -503,13 +503,22 @@ static CU_TestInfo tests_threat_comm[] = {
 };
 
 /******************************/
+void test01(){
+	CU_ASSERT_EQUAL(1, 1);
+}
 
+static CU_TestInfo githubActions[] = {
 
+		{"GitHub - Test01", NULL, NULL, test01},
+
+       CU_TEST_INFO_NULL,
+};
 
 /************ TEST SUITE ************/
 
 static CU_SuiteInfo suites[] = {
-		 {"TestSimpleAssert_Test_core", NULL, NULL, tests_threat_core},
+		{"GitHub Actions", NULL, NULL, githubActions},
+		//{"TestSimpleAssert_Test_core", NULL, NULL, tests_threat_core},
 		// {"TestSimpleAssert_Test_sysMon", NULL, NULL, tests_threat_sysMon},
         // {"TestSimpleAssert_TestDateTime", NULL, NULL, tests_Check_Test_Date_Time},
 		// {"TestSimpleAssert_Test_audio", NULL, NULL, tests_threat_audio},
